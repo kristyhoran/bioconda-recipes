@@ -22,7 +22,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.12
+    - python >=3.8,<3.13
   run:
     - python >=3.12
     - mlst
