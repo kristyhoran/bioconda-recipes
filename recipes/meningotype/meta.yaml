@@ -25,7 +25,7 @@ requirements:
     - python >=3.12
     - mlst
     - blast
-    - isPcr
+    - ispcr
 
 test:
   imports:
