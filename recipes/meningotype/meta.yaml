@@ -17,17 +17,19 @@ build:
     - meningotype=meningotype.meningotype:main
   run_exports:
     - {{ pin_subpackage('meningotype', max_pin="x") }}
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-cache-dir 
 
 requirements:
   host:
     - pip
-    - python >=3.8,<3.13
+    - python >=3.8
   run:
     - python >=3.12
     - mlst
     - blast
     - ispcr
+    - biopython
+    
 
 test:
   imports:
