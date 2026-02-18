@@ -11,10 +11,12 @@ source:
   sha256: 6b9717d19b4ae8f3002fefdd602448a7754cad365042d92650ed3be012f05ef2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - meningotype=meningotype.meningotype:main
+  run_exports:
+    - {{ pin_subpackage('shigapass', max_pin="x") }}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
