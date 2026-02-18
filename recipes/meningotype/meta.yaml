@@ -16,7 +16,7 @@ build:
   entry_points:
     - meningotype=meningotype.meningotype:main
   run_exports:
-    - {{ pin_subpackage('shigapass', max_pin="x") }}
+    - {{ pin_subpackage('meningotype', max_pin="x") }}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
