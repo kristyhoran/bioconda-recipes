@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=3.12
     - mlst >=2.32
+    - blast >=2.16
     - ispcr
     - biopython
     
