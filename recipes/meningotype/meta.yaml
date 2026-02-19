@@ -30,7 +30,6 @@ requirements:
     - blast
     - ispcr
     - biopython
-    - argparse
     
 
 test:
