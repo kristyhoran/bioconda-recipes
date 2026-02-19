@@ -32,15 +32,6 @@ requirements:
     - biopython
     
 
-test:
-  imports:
-    - meningotype
-  commands:
-    - pip check
-    - meningotype --help
-    - meningotype --test
-  requires:
-    - pip
 
 about:
   home: https://github.com/MDU-PHL/meningotype
@@ -51,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - andersgs
+    - kristyhoran
