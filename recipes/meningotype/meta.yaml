@@ -1,5 +1,5 @@
 {% set name = "meningotype" %}
-{% set version = "0.8.6" %}
+{% set version = "0.8.6b" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/MDU-PHL/meningotype/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6b9717d19b4ae8f3002fefdd602448a7754cad365042d92650ed3be012f05ef2
+  sha256: c987b1b665b4a8ba84920f3117a626e771ee7bd70fd5bfbba1d59a67bc57942a
 
 build:
   number: 0
