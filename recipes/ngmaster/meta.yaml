@@ -6,8 +6,8 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://files.pythonhosted.org/packages/17/9d/fd8ab3326d2c09d3d0025f2fc1fbc4bfc10113e175f5d0ff3335018d2bfb/ngmaster-1.1.1.tar.gz"
-  sha256: 538149cf2b2f43db42b6cb5389a0388f9a41aa44757f02873a85d92c9f581fcc
+  url: "https://github.com/MDU-PHL/ngmaster/archive/refs/tags/v{{ version }}.tar.gz"
+  sha256: f186f0d642a4d8830ec69eafdf4cb5b04dce749aa01bbe0d6d523b9ce238687e
 
 build:
   number: 0
@@ -20,15 +20,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.12
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.12
     - biopython
-    - bs4
-    - requests
-    - setuptools
     - mlst
 
 test:
@@ -36,7 +33,7 @@ test:
     - ngmaster
   commands:
     - ngmaster --help
-    - ngmaster --version
+    - ngmaster --test
 
 about:
   home: "https://github.com/MDU-PHL/ngmaster"
@@ -50,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - stroehleina
+    - kristyhoran
