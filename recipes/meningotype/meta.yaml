@@ -16,7 +16,7 @@ build:
   entry_points:
     - meningotype=meningotype.meningotype:main
   run_exports:
-    - {{ pin_subpackage('meningotype', max_pin="x") }}
+    - {{ pin_subpackage('meningotype', max_pin="x.x") }}
   script: "{{ PYTHON }} -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv"
 
 requirements:
@@ -29,7 +29,6 @@ requirements:
     - mlst
     - blast
     - ispcr
-    - pip
     - biopython
     
 
