@@ -10,7 +10,7 @@ source:
   sha256: f186f0d642a4d8830ec69eafdf4cb5b04dce749aa01bbe0d6d523b9ce238687e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - ngmaster=ngmaster.run_ngmaster:main
@@ -40,7 +40,7 @@ about:
   license: "GPL-3.0-only"
   license_family: "GPL3"
   license_file: "LICENSE"
-  summary: "In silico multi-antigen sequence typing for Neisseria gonorrhoeae (NG-MAST) and Neisseria gonorrhoeae sequence typing for antimicrobial resistance (NG-STAR)."
+  summary: "In silico multi-antigen sequence typing for N. gonorrhoeae (NG-MAST and NG-STAR)."
   doc_url: "https://github.com/MDU-PHL/ngmaster/blob/master/README.md"
   dev_url: "https://github.com/MDU-PHL/ngmaster"
 
