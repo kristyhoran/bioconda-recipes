@@ -15,6 +15,8 @@ build:
   entry_points:
     - lissero = lissero.run_lissero:run_lissero
   script: "{{ PYTHON }} -m pip install . -vv"
+  run_exports:
+    - {{ pin_subpackage('lissero', max_pin="x") }}
 
 requirements:
   host:
