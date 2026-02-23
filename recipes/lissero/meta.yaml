@@ -33,7 +33,6 @@ requirements:
 test:
   imports:
     - lissero
-    - lissero.scripts
   commands:
     - lissero --help
 
